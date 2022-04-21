@@ -1,30 +1,31 @@
 <template>
-
+ <body>
   <div>
     <header>
-      <HeaderComp />
+      <HeaderComp/>
     </header>
 
     <main>
-      <div class="container">
-      
+      <div class="cards">
+       <GrigliaDischi/>
       </div>
     </main>
 
   </div>
-
+</body>
 
 </template>
 
 <script>
   import HeaderComp from './components/HeaderComp.vue'
+  import GrigliaDischi from './components/GrigliaDischi.vue'
   import "bootstrap"
-  import axios from 'axios'
 
   export default {
     name: 'App',
     components: {
-      HeaderComp
+      HeaderComp,
+      GrigliaDischi
     }
   }
 </script>
@@ -33,8 +34,7 @@
 <style lang="scss">
   @import "bootstrap/dist/css/bootstrap.min.css";
   
-
-  .container{
-    background-color: #1E2D3B;
+  body{
+    background-color: #202D3B;
   }
 </style>
